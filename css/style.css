@@ -1,0 +1,437 @@
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#000001;
+
+  
+}
+.dark-theme{
+    --primary-color:#000906;
+    --secondary-color:#fff;
+}
+
+.body{
+height: 100vh;
+width: 100%;
+background: var(--primary-color);
+font-family: 'Yaldevi', sans-serif;
+position: relative;
+}
+.logo{
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar{
+    background-color:var(--primary-color);
+}
+.navbar-nav li a{
+    color: var(--secondary-color) !important;
+    color: var(--primary-color) ;
+  font-weight: 600;
+}
+.nav-item a:hover{
+    color: #ff4321 !important;
+}
+.sticky-top{
+    z-index: 1 !important;
+    overflow: hidden;
+}
+.hidden{
+    z-index: -1;
+}
+.info{
+   max-width: 45%;
+   margin-left: 9%;
+   margin-top: 5%;
+}
+.info h1{
+    font-size: 60px;
+    
+    color:  var(--secondary-color); 
+    margin-bottom: 20px;
+}
+.info h1 span{
+    color: #ff4321;
+}
+.info p{
+color:  var(--secondary-color);
+margin-bottom: 25px;
+font-family: 'Yaldevi', sans-serif;
+}
+.info a{
+    background-color:  var(--secondary-color);
+    color:var(--primary-color);
+}
+.info a:hover{
+   background-color:var(--primary-color);
+    color: #fff;
+}
+.img-box{
+    max-width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+    
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-box:hover .back-img{
+bottom: 40px;
+
+}
+.img-box:hover .main-img{
+    left: 54%;
+}
+.social-icon {
+    margin-left: 9%;
+    margin-top: 60px;
+
+}
+.social-icon a{
+    font-size: 30px;
+    color:  var(--secondary-color);
+    margin-right: 20px;
+}
+.social-icon a:hover{
+   color: #ff4321; 
+}
+/*abou sectuin */
+.about{
+    background-color: var(--primary-color);
+}
+.about-text h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Yaldevi', sans-serif;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-right: 2px;
+    color: var(--secondary-color);
+    
+}
+.about-text h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    width: 170px;
+    height: 3px;
+    background: #1a1919;
+    transform: translateY(-50%);
+}
+
+.about-text h1::after {
+    content: "who i am";
+    position: absolute;
+    left: 48%;
+    font-size: 16px;
+    color: #d81919;
+    padding: 5px;
+    background:var(--primary-color);
+    
+    transform: translateY(169%);
+}
+   
+
+.about-left-img{
+   width: 45%;
+}
+.about-left-img img{
+    height: auto;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about-right-text{
+    margin-top: 8%;
+}
+.about-right-text h3{
+margin: -53px 5px 30px 63px;
+color: black;
+font-weight: 700;
+}
+.about-right-text p{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 52px;
+    color: var(--secondary-color);
+}
+.about-right-text a{
+    font-size: 30px;
+    display: block;
+    width: 199px;
+    margin: 100px;
+    background: darkmagenta;
+}
+.about-right-text a:hover{
+    background-color: rgb(167, 6, 236);
+}
+/* sevise section css */
+.seevice-secton{
+    background: var(--primary-color);
+}
+.seevice-secton h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Yaldevi', sans-serif;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-right: 2px;
+    color: var(--secondary-color) ;
+
+}
+.seevice-secton h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    width: 200px;
+    height: 3px;
+    background:red;
+    transform: translateY(-50%);
+}
+.seevice-secton h2::after {
+    content: "what i provide";
+    position: absolute;
+    left: 45.5%;
+    font-size: 16px;
+    color: #d81919;
+    padding: 5px;
+    background: #edf2fc;
+    transform: translateY(169%);
+}
+  
+.services{
+    width: 100%;
+   
+}
+.services i{
+    font-size: 50px;
+    color: var(--secondary-color);
+    color: crimson;
+    transition: color 0.3s ease;
+    display: block;
+    text-align: center;
+    
+}
+.services h3{
+margin: 60 0;
+text-align: center;
+font-family: 'Yaldevi', sans-serif;
+color: var(--secondary-color);
+}
+.services p{
+    margin: 0 37px;
+    font-family: 'Yaldevi', sans-serif;
+    color: var(--secondary-color);
+}
+.services:hover.services{
+    background:#FF5C58;
+    color: var(--primaary-color);
+    transform: translateY(1.05);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.services:hover i{
+    color: var(--secondary-color);
+}
+.service-box{
+    background:var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer; 
+    transform: translateY(1.05);
+    transition: .5s;
+    width: 90%;
+    margin: 60px;
+}
+
+/*skill section css*/
+.skill{
+    
+    background: var(--primary-color);
+}
+.div {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    color: var(--secondary-color);
+}
+.div h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 45.5%;
+    width: 126px;
+    height: 3px;
+    top: 52px;
+    background: red;
+    transform: translateY(-50%);
+}
+.div h2::after {
+    content: "what i know";
+    position: absolute;
+    left: 46.5%;
+    font-size: 16px;
+    color: #d81919;
+    padding: 5px;
+    background: #edf2fc;
+    transform: translateY(120%);
+}
+
+.left-side{
+    margin: 20px 50px;
+}
+.left-side h4{
+    font-weight: 700;
+    font-family: 'Yaldevi', sans-serif;
+    color: var(--secondary-color);
+}
+.left-side p{
+    font-family: 'Yaldevi', sans-serif;
+    color:var(--secondary-color);
+     margin-bottom: 8px;
+     line-height: 33px;
+}
+.left-side a{
+ 
+   background: #FF5C58;
+}
+.right .bars{
+    margin-bottom: 15px;
+}
+.right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.right span{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.html::before{
+    width: 90%;
+    color: var(--secondary-color);
+}
+.css::before{
+    width: 80%;
+}
+.js::before{
+    width: 80%;
+}
+.php::before{
+    width: 70%;
+}
+.mysql::before{
+    width: 70%;
+}
+/*  contact section css */
+.contact-section{
+    background:var(--primary-color);
+   padding-bottom: 30px;
+}
+
+.dive {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    color: var(--secondary-color);
+}
+.dive h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 45.5%;
+    width: 126px;
+    height: 3px;
+    top: 52px;
+    background: red;
+    transform: translateY(-50%);
+}
+.dive h2::after {
+    content: "get in touch";
+    position: absolute;
+    left: 46.5%;
+    font-size: 16px;
+    color: #d81919;
+    padding: 5px;
+    background: #edf2fc;
+    transform: translateY(120%);
+}
+.lef-info{
+    display: flex;
+    height: 65px;
+    align-items: center;
+    color: var(--secondary-color);
+}
+.lef-info i{
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-size: 30px;
+
+}
+.info{
+    margin-left: 30px;
+}
+.sub-title{
+    color: var(--secondary-color);
+}
+.text{
+    color: var(--secondary-color);
+}
+/* footer */
+footer{
+    
+    background:var(--primary-color);
+    padding: 15px 23px;
+    color:var(--secondary-color);
+    text-align: center;
+   
+}
+footer span a{
+    color:#FF5C58;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
